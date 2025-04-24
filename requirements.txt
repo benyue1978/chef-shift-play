@@ -1,0 +1,5 @@
+pyautogui>=0.9.54
+Pillow>=10.0.0  # PIL for image processing
+imgurpython>=1.1.7  # imgur API client
+python-dotenv>=1.0.0  # for environment variables 
+pywinctl>=0.4.0
