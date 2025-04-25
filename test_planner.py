@@ -15,7 +15,7 @@ def main():
         
         # 使用已有的图片URL
         image_urls = [
-            "https://i.imgur.com/VbqQAsr.jpeg"
+            "https://i.imgur.com/znzg4hm.png"
         ]
         
         # 分析截图
