@@ -20,18 +20,15 @@ def main():
         
         # 分析截图
         for image_url in image_urls:
-            plan = planner.analyze_screenshot(image_url)
-            if not plan:
+            inputs = planner.analyze_screenshot(image_url)
+            if not inputs:
                 print("分析截图失败")
-                sys.exit(1)
-            
+                continue
+
             print("\n分析结果:")
-            print(plan)
+            print(inputs)
             print("-" * 80)
             print("\n")
-            # 取得所有input
-            inputs = [step['input'] for step in plan['steps']]
-            print(inputs)
         
     except KeyboardInterrupt:
         print("\n程序已终止")
